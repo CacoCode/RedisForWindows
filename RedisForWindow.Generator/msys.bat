@@ -1,2 +1,2 @@
 ﻿@echo off
-pacman -Sy && pacman -S gcc make && y
+pacman -Sy && echo y | pacman -S gcc make

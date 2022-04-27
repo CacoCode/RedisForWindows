@@ -7,10 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
     <PackageReference Include="SharpCompress" Version="0.31.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="dlfcn.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="msys_redis.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="msys.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="msys2-base-x86_64-20220319.tar.xz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="pacman\mirrorlist.mingw32">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
