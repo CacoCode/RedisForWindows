@@ -9,7 +9,7 @@
 # Redis for windows
 Redis windows 安装包，并携带生成工具
 
-# 包下载
+# 下载
 
 点击[这里](https://github.com/CacoCode/RedisForWindows/releases) 查看版本
 
@@ -22,3 +22,9 @@ Redis windows 安装包，并携带生成工具
 2、选择生成目录
 
 2、填写redis对应的Tags版本号
+
+# 生成目录结构
+
+如何最后生成与下图不同，请点击安装目录下Temp文件夹，重新走一遍流程
+
+![image](https://user-images.githubusercontent.com/97924970/165873849-26735e1a-31d0-4af0-addd-291202381746.png)
