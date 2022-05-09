@@ -49,19 +49,18 @@
             this.installMsysBtn.CharacterCasing = MaterialSkin2DotNet.Controls.MaterialButton.CharacterCasingEnum.Title;
             this.installMsysBtn.Density = MaterialSkin2DotNet.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.installMsysBtn.Depth = 0;
-            this.installMsysBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.installMsysBtn.HighEmphasis = true;
             this.installMsysBtn.Icon = null;
-            this.installMsysBtn.Location = new System.Drawing.Point(3, 64);
+            this.installMsysBtn.Location = new System.Drawing.Point(7, 70);
             this.installMsysBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.installMsysBtn.MouseState = MaterialSkin2DotNet.MouseState.HOVER;
             this.installMsysBtn.Name = "installMsysBtn";
             this.installMsysBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.installMsysBtn.Size = new System.Drawing.Size(457, 36);
+            this.installMsysBtn.Size = new System.Drawing.Size(267, 36);
             this.installMsysBtn.TabIndex = 8;
             this.installMsysBtn.Text = "请点击安装Msys，再进行以下操作";
             this.installMsysBtn.Type = MaterialSkin2DotNet.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.installMsysBtn.UseAccentColor = true;
+            this.installMsysBtn.UseAccentColor = false;
             this.installMsysBtn.UseVisualStyleBackColor = false;
             this.installMsysBtn.Click += new System.EventHandler(this.installMsysBtn_Click);
             // 
@@ -97,7 +96,7 @@
             this.button2.Depth = 0;
             this.button2.HighEmphasis = true;
             this.button2.Icon = null;
-            this.button2.Location = new System.Drawing.Point(386, 118);
+            this.button2.Location = new System.Drawing.Point(398, 118);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button2.MouseState = MaterialSkin2DotNet.MouseState.HOVER;
             this.button2.Name = "button2";
@@ -143,7 +142,7 @@
             this.textBox2.SelectionLength = 0;
             this.textBox2.SelectionStart = 0;
             this.textBox2.ShortcutsEnabled = true;
-            this.textBox2.Size = new System.Drawing.Size(252, 48);
+            this.textBox2.Size = new System.Drawing.Size(264, 48);
             this.textBox2.SkipLiterals = true;
             this.textBox2.TabIndex = 14;
             this.textBox2.TabStop = false;
@@ -186,7 +185,7 @@
             this.textBox1.SelectionLength = 0;
             this.textBox1.SelectionStart = 0;
             this.textBox1.ShortcutsEnabled = true;
-            this.textBox1.Size = new System.Drawing.Size(252, 48);
+            this.textBox1.Size = new System.Drawing.Size(264, 48);
             this.textBox1.SkipLiterals = true;
             this.textBox1.TabIndex = 15;
             this.textBox1.TabStop = false;
@@ -204,7 +203,7 @@
             this.button1.Depth = 0;
             this.button1.HighEmphasis = true;
             this.button1.Icon = null;
-            this.button1.Location = new System.Drawing.Point(387, 179);
+            this.button1.Location = new System.Drawing.Point(399, 179);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button1.MouseState = MaterialSkin2DotNet.MouseState.HOVER;
             this.button1.Name = "button1";
@@ -226,7 +225,7 @@
             this.listBox1.ItemHeight = 17;
             this.listBox1.Location = new System.Drawing.Point(12, 282);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(439, 242);
+            this.listBox1.Size = new System.Drawing.Size(451, 242);
             this.listBox1.TabIndex = 17;
             // 
             // label1
@@ -262,7 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 542);
+            this.ClientSize = new System.Drawing.Size(475, 546);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <AdditionalFiles Remove="app.manifest" />
+  </ItemGroup>
+
+	<ItemGroup>
     <PackageReference Include="MaterialSkin2DotNet" Version="1.1.2" />
     <PackageReference Include="SharpCompress" Version="0.31.0" />
   </ItemGroup>

@@ -102,7 +102,7 @@ namespace RedisForWindow.Generator
             {
                 listBox1.Add("等待安装窗口关闭，请勿进行其他操作，无报错信息则生成成功");
                 Process.Start("explorer.exe", textBox2.Text);
-                if(File.Exists(zipFileName)) File.Delete(zipFileName);
+                if (File.Exists(zipFileName)) File.Delete(zipFileName);
             });
         }
 
@@ -126,6 +126,16 @@ namespace RedisForWindow.Generator
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("explorer","https://github.com/redis/redis/tags");
+        }
+
+        private async void materialButton1_Click(object sender, EventArgs e)
+        {
+            //await FileHelper.Delete(AppDomain.CurrentDomain.BaseDirectory + "Temp\\msys64\\msys2.exe");
+            var directory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "Temp");
+            if (directory.Exists)
+            {
+                Microsoft.VisualBasic.FileIO.FileSystem.DeleteDirectory(AppDomain.CurrentDomain.BaseDirectory + "Temp", Microsoft.VisualBasic.FileIO.DeleteDirectoryOption.DeleteAllContents);
+            }
         }
     }
 

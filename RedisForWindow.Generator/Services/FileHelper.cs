@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,6 +37,40 @@ namespace RedisForWindow.Generator.Services
                 }
                 listBox.Add("解压完成");
             });
+        }
+
+        public static async Task DeleteDir(string filepath)
+        {
+            try
+            {
+                var info = new DirectoryInfo(filepath)
+                {
+                    Attributes = FileAttributes.Normal & FileAttributes.Directory
+                };
+                File.SetAttributes(filepath, FileAttributes.Normal);
+                if (Directory.Exists(filepath))
+                {
+                    foreach (var file in Directory.GetFileSystemEntries(filepath))
+                    {
+                        if (File.Exists(file))
+                        {
+                            File.Delete(file);
+                        }
+                        else
+                        {
+                            await DeleteDir(file);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        public static async Task Delete(string filePath)
+        {
+            if(File.Exists(filePath)) File.Delete(filePath);
         }
     }
 }
