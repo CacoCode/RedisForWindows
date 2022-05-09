@@ -25,6 +25,6 @@ Redis windows 安装包，并携带生成工具
 
 # 生成目录结构
 
-如何最后生成与下图不同，请点击清除缓存，重新走一遍流程
+如何最后生成与下图不同，请点击安装目录下Temp文件夹，重新走一遍流程
 
 ![image](https://user-images.githubusercontent.com/97924970/165873849-26735e1a-31d0-4af0-addd-291202381746.png)
