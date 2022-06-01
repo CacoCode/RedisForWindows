@@ -11,7 +11,7 @@ Redis windows 安装包，并携带生成工具
 
 # 下载
 
-点击[这里](https://github.com/CacoCode/RedisForWindows/releases) 查看版本
+点击[这里](https://github.com/CacoCode/RedisForWindows/releases) 下载Window 版本 Redis 
 
 # 生成器
 
