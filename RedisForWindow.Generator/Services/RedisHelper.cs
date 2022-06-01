@@ -28,11 +28,14 @@ namespace RedisForWindow.Generator.Services
         {
             var redisConf = $"{AppDomain.CurrentDomain.BaseDirectory}Temp\\redis-{sourceDir}\\redis.conf";
             var sentinelConf = $"{AppDomain.CurrentDomain.BaseDirectory}Temp\\redis-{sourceDir}\\sentinel.conf";
+            var msysDll = $"{AppDomain.CurrentDomain.BaseDirectory}msys-2.0.dll";
             if (!Directory.Exists($"{targetDir}\\bin")) Directory.CreateDirectory($"{targetDir}\\bin");
             var redisConfTarget = $"{targetDir}\\bin\\redis.conf";
             var sentinelConfTarget = $"{targetDir}\\bin\\sentinel.conf";
+            var msysDllTarget = $"{targetDir}\\bin\\msys-2.0.dll";
             File.Copy(redisConf, redisConfTarget, true);
             File.Copy(sentinelConf, sentinelConfTarget, true);
+            File.Copy(msysDll, msysDllTarget, true);
         }
 
         public static async Task GeneratorRedis(string arguments, string serverPath,Action call)
